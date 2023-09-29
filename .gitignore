@@ -394,4 +394,4 @@ MigrationBackup/
 FodyWeavers.xsd
 
 
-**/**/*.bin
+**/Workbench/*.bin
