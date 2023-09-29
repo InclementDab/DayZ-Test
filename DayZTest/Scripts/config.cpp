@@ -1,7 +1,7 @@
 
 class CfgPatches
 {
-	class ModTemplate_Scripts
+	class DayZTest_Scripts
 	{
         units[] = {};
         weapons[] = {};
@@ -12,14 +12,14 @@ class CfgPatches
 
 class CfgMods 
 {
-	class DZ_ModTemplate
+	class DZ_DayZTest
 	{
 		name = "Mod Template";
-		dir = "ModTemplate";
+		dir = "DayZTest";
 		credits = "";
 		author = "";
-		creditsJson = "ModTemplate/Scripts/Data/Credits.json";
-		inputs = "ModTemplate/Scripts/Data/Inputs.xml";
+		creditsJson = "DayZTest/Scripts/Data/Credits.json";
+		inputs = "DayZTest/Scripts/Data/Inputs.xml";
 		type = "mod";
 		dependencies[] =
 		{
@@ -36,8 +36,8 @@ class CfgMods
 				value = "";
 				files[] =
 				{
-					"ModTemplate/scripts/common",
-					"ModTemplate/scripts/1_core"
+					"DayZTest/scripts/common",
+					"DayZTest/scripts/1_core"
 				};
 			};
 
@@ -46,8 +46,8 @@ class CfgMods
 				value="";
 				files[] = 
 				{
-					"ModTemplate/scripts/common",
-					"ModTemplate/scripts/3_Game"
+					"DayZTest/scripts/common",
+					"DayZTest/scripts/3_Game"
 				};
 			};
 			class worldScriptModule
@@ -55,8 +55,8 @@ class CfgMods
 				value="";
 				files[] = 
 				{
-					"ModTemplate/scripts/common",
-					"ModTemplate/scripts/4_World"
+					"DayZTest/scripts/common",
+					"DayZTest/scripts/4_World"
 				};
 			};
 
@@ -65,8 +65,8 @@ class CfgMods
 				value="";
 				files[] = 
 				{
-					"ModTemplate/scripts/common",
-					"ModTemplate/scripts/5_Mission"
+					"DayZTest/scripts/common",
+					"DayZTest/scripts/5_Mission"
 				};
 			};
 		};

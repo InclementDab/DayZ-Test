@@ -7,7 +7,7 @@ Mod Template for DayZ Standalone. Includes build tools, gproj, and script folder
 https://github.com/InclementDab/DayZ-Dabs-Framework
 https://github.com/Arkensor/DayZ-CommunityFramework
 
-2.) Clone your new templated repository onto your PC. Using your favorite text editor, rename all instances of ModTemplate to YourModPrefix, including the two folders
+2.) Clone your new templated repository onto your PC. Using your favorite text editor, rename all instances of DayZTest to YourModPrefix, including the two folders
 
 3.) In all three repositories, there is a "SetupWorkdrive.bat" file. Run this after you've finished cloning / downloading.
 
@@ -29,7 +29,7 @@ https://github.com/Arkensor/DayZ-CommunityFramework
 
 ```
 
-Any folders inside of the ModTemplate directory will be converted into PBO's (excluding the Workbench folder)
+Any folders inside of the DayZTest directory will be converted into PBO's (excluding the Workbench folder)
 
 DayZ Workbench Wiki:
 https://community.bistudio.com/wiki/DayZ:Workbench_Script_Debugging#Filepatching

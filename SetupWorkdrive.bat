@@ -2,12 +2,12 @@
 
 cd /D "%~dp0"
 
-IF exist "P:\ModTemplate\" (
-	echo Removing existing link P:\ModTemplate
-	rmdir "P:\ModTemplate\"
+IF exist "P:\DayZTest\" (
+	echo Removing existing link P:\DayZTest
+	rmdir "P:\DayZTest\"
 )
 
-echo Creating link P:\ModTemplate
-mklink /J "P:\ModTemplate\" "%cd%\ModTemplate\"
+echo Creating link P:\DayZTest
+mklink /J "P:\DayZTest\" "%cd%\DayZTest\"
 
 echo Done
