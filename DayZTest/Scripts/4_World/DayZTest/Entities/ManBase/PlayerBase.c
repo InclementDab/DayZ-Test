@@ -23,3 +23,16 @@ modded class PlayerBase
 		}
 	}
 }
+
+modded class DayZPlayerImplementJumpClimb
+{
+    override private void Jump()
+    {
+        m_bIsJumpInProgress = true;
+        m_Player.SetFallYDiff( m_Player.GetPosition()[1] );
+
+        m_Player.OnJumpStart();
+        m_Player.StartCommand_Fall(10.0);
+        m_Player.StopHandEvent();
+    }
+} 
