@@ -2,12 +2,11 @@ modded class PlayerBase
 {
 	void PlayerBase()
 	{
-		Print("AAA");
-		SetEventMask(EntityEvent.SIMULATE);
 	}	
 	
-	override void EOnSimulate(IEntity other, float dt)
+	override void CommandHandler(float pDt, int pCurrentCommandID, bool pCurrentCommandFinished)
 	{
+		super.CommandHandler(pDt,pCurrentCommandID,pCurrentCommandFinished);
 		
 		array<Object> objs = {};
 		GetGame().GetObjectsAtPosition(GetPosition(), 10, objs, null);
@@ -19,7 +18,7 @@ modded class PlayerBase
 		foreach (Object res: results) {
 			Print(res);
 			
-			dBodyApplyForceAt(res, GetPosition(), Vector(0, dBodyGetMass(this) * dt * -9.81, 0));
+			dBodyApplyForceAt(res, GetPosition(), Vector(0, dBodyGetMass(this) * pDt * -9.81, 0));
 		}
 	}
 }
